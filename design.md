@@ -60,17 +60,17 @@ The Homelyy platform uses a microservices-inspired architecture with clear separ
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     Mobile Application                       │
-│              (React Native - iOS & Android)                  │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐   │
-│  │  Auth    │  │  Meal    │  │  Order   │  │  Profile │   │
-│  │  Screens │  │Discovery │  │Management│  │  & Cook  │   │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────┘   │
+│                     Mobile Application                      │
+│              (React Native - iOS & Android)                 │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
+│  │  Auth    │  │  Meal    │  │  Order   │  │  Profile │     │
+│  │  Screens │  │Discovery │  │Management│  │  & Cook  │     │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘     │
 └─────────────────────────────────────────────────────────────┘
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    API Gateway / Load Balancer               │
+│                    API Gateway / Load Balancer              │
 └─────────────────────────────────────────────────────────────┘
                             │
         ┌───────────────────┼───────────────────┐
@@ -90,11 +90,11 @@ The Homelyy platform uses a microservices-inspired architecture with clear separ
         └───────────────────┘
                     ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                        Data Layer                            │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐   │
-│  │PostgreSQL│  │  Redis   │  │   S3     │  │Elastic   │   │
-│  │(Primary) │  │ (Cache)  │  │ (Media)  │  │(Search)  │   │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────┘   │
+│                        Data Layer                           │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
+│  │PostgreSQL│  │  Redis   │  │   S3     │  │Elastic   │     │
+│  │(Primary) │  │ (Cache)  │  │ (Media)  │  │(Search)  │     │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -1535,3 +1535,4 @@ test("meals are filtered by delivery radius", () => {
 - Run linting and code formatting checks
 - Perform static code analysis
 - Review code for security vulnerabilities
+
